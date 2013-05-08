@@ -1,0 +1,21 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=4576
+
+
+Please goto homepage for a better view and screenshots.
+
+Homepage: http://zhaocai.github.io/linepower.vim/ 
+
+
+This powerline extension is a quickstart for adding customized powerline local themes in vim.
+You may fork it and add more local themes for your convenience.
+
+## Included Local Themes
+
+- unite.vim
+- tagbar
+- rvm/rbenv version
+- syntastic
+- vimshell
+- vimfiler
+- asyncommand
+
