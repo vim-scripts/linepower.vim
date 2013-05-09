@@ -25,7 +25,9 @@ exec s:linepower_pycmd "import vim, os, sys"
 exec s:linepower_pycmd "sys.path.append(vim.eval('g:linepower_python_path'))"
 
 if !exists('g:powerline_config_overrides')
-    let g:powerline_config_overrides = {}
+    let g:powerline_config_overrides = {'common' : {}}
+elseif !has_key(g:powerline_config_overrides, 'common')
+    let g:powerline_config_overrides.common = {}
 endif
 
 if has_key(g:powerline_config_overrides.common, 'paths')
@@ -48,11 +50,17 @@ let g:unite_force_overwrite_statusline = 0
 " -=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-
 let g:vimshell_force_overwrite_statusline = 0
 
+" -=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-
+" VimFiler:
+" -=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-=*-
+let g:vimfiler_force_overwrite_statusline = 0
+
+
 
 
 
 " ============================================================================
 " Modeline:                                                               [[[1
 " ============================================================================
-" vim: set ft=vim ts=4 sw=4 tw=78 fdm=marker fmr=[[[,]]] fdl=1 :
+" vim: set ft=vim ts=4 sw=4 et tw=78 fdm=marker fmr=[[[,]]] fdl=1 :
 
