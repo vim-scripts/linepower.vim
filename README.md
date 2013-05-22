@@ -5,7 +5,7 @@
     Author        : Zhao Cai
     EMail         : caizhaoff@gmail.com
     Homepage      : http://zhaocai.github.io/linepower.vim/
-    Version       : 1.2.0
+    Version       : 1.3.0
     Date Created  : Tue 07 May 2013 08:59:43 PM EDT
     Last Modified : Wed 08 May 2013 02:57:10 AM EDT
     ------------- - -----------------------------------------------
@@ -23,7 +23,7 @@ You may fork it and add more local themes.
 
 2. tagbar
 
-    ![tagbar]( http://d.pr/i/yrUk+ )
+    ![tagbar](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/tagbar.png)     ![tagbar_nc](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/tagbar_nc.png)
 
 3. rvm/rbenv version
 4. syntastic
@@ -40,6 +40,16 @@ You may fork it and add more local themes.
 
 6. asyncommand
 
+
+7. previewwindow
+
+    ![previewwindow](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/previewwindow.png)
+
+8. quickfix / location list
+
+    ![quickfix](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/quickfix.png)
+
+    ![locationlist](https://raw.github.com/zhaocai/linepower.vim/master/screenshots/locationlist.png)
 
 
 ## Installation
@@ -65,3 +75,19 @@ You may fork it and add more local themes.
 [powerline]: https://github.com/Lokaltog/powerline
 [linepower]: https://github.com/zhaocai/linepower.vim
 
+
+
+## Segments
+
+### Weather Segments
+
+```json 
+    {
+            "module" : "powerline.segments.common",
+            "name": "weather",
+            "exclude_modes": ["nc"],
+            "draw_soft_divider": true,
+            "priority": 10
+    },
+
+```
