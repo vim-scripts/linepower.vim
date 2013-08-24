@@ -13,9 +13,11 @@ You may fork it and add more local themes for your convenience.
 
 - unite.vim
 - tagbar
+- nerdtree
 - rvm/rbenv version
 - syntastic
 - vimshell
 - vimfiler
 - asyncommand
+- quickfix / locationlist
 
